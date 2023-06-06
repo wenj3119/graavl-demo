@@ -28,8 +28,10 @@ source /etc/profile
 ```
 # 到上面下载的graavlvm的bin目录下,执行如下命令
 ./gu install native-image
+# 安装相关依赖，我这里是linux系统执行如下命令，其他操作系统参考下面链接
+sudo apt-get install build-essential libz-dev zlib1g-dev
 ```
-
+https://www.graalvm.org/latest/reference-manual/native-image/
 
 ```
 $ ./gradlew nativeCompile
